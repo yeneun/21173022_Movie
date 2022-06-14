@@ -15,40 +15,76 @@
         app:cardBackgroundColor="#FFFFFFFF"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="170dp"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:padding="5dp"
-                app:srcCompat="@drawable/movie"/>
+                app:srcCompat="@drawable/movie" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/movieName"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="제목"
-                android:textSize="22sp"
-                android:maxLines="1"/>
-            <TextView
-                android:id="@+id/peopleCount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:paddingRight="10dp"
-                android:gravity="right"
-                android:text="관객 수"
-                android:textColor="#FF0000FF"
-                android:textSize="16sp"/>
-        </LinearLayout>
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/movieName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="제목"
+                    android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/movieRank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="순위"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/movieOpen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="개봉일"
+                    android:textColor="#FF0000FF"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/peopleCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="관객 수"
+                    android:textColor="#006400"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/movieSales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="매출액"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
